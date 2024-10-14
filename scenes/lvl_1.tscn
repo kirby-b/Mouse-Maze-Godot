@@ -25,3 +25,10 @@ position = Vector2(192, 448)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="End"]
 position = Vector2(1024, 416)
 shape = SubResource("RectangleShape2D_251gw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 656
+editor_draw_limits = true
