@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfp0x3vwmxom4"]
+
+[ext_resource type="PackedScene" uid="uid://cdk5sv0pfjewg" path="res://scenes/tile_map.tscn" id="1_86j0r"]
+
+[node name="LVL3" type="Node2D"]
+
+[node name="TileMap" parent="." instance=ExtResource("1_86j0r")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 656
+editor_draw_limits = true
