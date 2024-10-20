@@ -34,3 +34,6 @@ limit_top = 0
 limit_right = 1152
 limit_bottom = 656
 editor_draw_limits = true
+
+[connection signal="mouse_entered" from="Out" to="." method="_on_out_mouse_entered"]
+[connection signal="mouse_entered" from="End" to="." method="_on_end_mouse_entered"]

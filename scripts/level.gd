@@ -1,11 +1,14 @@
 extends Node2D
 
+@onready var StartPos = $StartPos
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	Input.warp_mouse(StartPos.position)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _on_out_mouse_entered():
+	print("Death")
+
+
+func _on_end_mouse_entered():
+	print("Win")
