@@ -7,8 +7,8 @@ func _ready():
 
 
 func _on_out_mouse_entered():
-	print("Death")
+	Events.emit_signal("player_fail")
 
 
 func _on_end_mouse_entered():
-	print("Win")
+	Events.emit_signal("player_win")
