@@ -18,6 +18,7 @@ config/icon="res://media/icon.svg"
 [autoload]
 
 Events="*res://scripts/Events.gd"
+ScreenPlayer="*res://scenes/screen_player.tscn"
 
 [display]
 
