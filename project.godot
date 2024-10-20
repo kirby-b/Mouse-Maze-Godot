@@ -15,6 +15,10 @@ run/main_scene="res://scenes/lvl_1.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://media/icon.svg"
 
+[autoload]
+
+Events="*res://scripts/Events.gd"
+
 [dotnet]
 
 project/assembly_name="Mouse-maze-godot"
