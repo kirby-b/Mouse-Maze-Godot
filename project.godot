@@ -19,6 +19,12 @@ config/icon="res://media/icon.svg"
 
 Events="*res://scripts/Events.gd"
 
+[display]
+
+window/size/resizable=false
+window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="res://media/mouse.png"
+
 [dotnet]
 
 project/assembly_name="Mouse-maze-godot"
