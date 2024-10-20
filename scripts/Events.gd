@@ -8,3 +8,5 @@ signal player_win
 signal player_cheat
 # Signals the player hit the "secret end" jumpscare(The way LVL 3 should go)
 signal jumpscare
+# Signals the player continued
+signal player_continue
