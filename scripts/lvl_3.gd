@@ -9,12 +9,12 @@ func _ready():
 
 
 func _on_out_mouse_entered():
-	print("Death")
+	Events.emit_signal("player_fail")
 
 
 func _on_end_mouse_entered():
-	print("CHEATER")
+	Events.emit_signal("player_cheat")
 
 
 func _on_surprise_mouse_entered():
-	print("Get spooked")
+	Events.emit_signal("jumpscare")
