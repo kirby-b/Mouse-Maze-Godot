@@ -24,7 +24,6 @@ ScreenPlayer="*res://scenes/screen_player.tscn"
 
 window/size/resizable=false
 window/stretch/mode="canvas_items"
-mouse_cursor/custom_image="res://media/mouse.png"
 
 [dotnet]
 
