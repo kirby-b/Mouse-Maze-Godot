@@ -3,11 +3,10 @@ extends Area2D
 # Gets a .tscn export
 @export_file("*.tscn") var NEXT_LVL: String
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	Events.connect("player_win", Callable(self, "_on_player_win"))
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+
+func _on_player_win():
+	get_tree().change_scene_to_file(NEXT_LVL) # Changes to next level
