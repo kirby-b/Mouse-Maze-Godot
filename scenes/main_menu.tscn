@@ -1,0 +1,86 @@
+[gd_scene load_steps=2 format=3 uid="uid://coakiobvvl2jd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cweti"]
+size = Vector2(257, 65)
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Play" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Play"]
+position = Vector2(576, 352)
+shape = SubResource("RectangleShape2D_cweti")
+
+[node name="ColorRect" type="ColorRect" parent="Play"]
+offset_left = 448.0
+offset_top = 320.0
+offset_right = 704.0
+offset_bottom = 384.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Play"]
+offset_left = 448.0
+offset_top = 320.0
+offset_right = 704.0
+offset_bottom = 384.0
+bbcode_enabled = true
+text = "
+[center][color=Black]Play[/color][/center]"
+fit_content = true
+
+[node name="Settings" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Settings"]
+position = Vector2(576, 448)
+shape = SubResource("RectangleShape2D_cweti")
+
+[node name="ColorRect" type="ColorRect" parent="Settings"]
+offset_left = 448.0
+offset_top = 416.0
+offset_right = 704.0
+offset_bottom = 480.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Settings"]
+offset_left = 448.0
+offset_top = 416.0
+offset_right = 704.0
+offset_bottom = 480.0
+bbcode_enabled = true
+text = "
+[center][color=Black]Settings[/color][/center]"
+fit_content = true
+
+[node name="Exit" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit"]
+position = Vector2(576, 544)
+shape = SubResource("RectangleShape2D_cweti")
+
+[node name="ColorRect" type="ColorRect" parent="Exit"]
+offset_left = 448.0
+offset_top = 512.0
+offset_right = 704.0
+offset_bottom = 576.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Exit"]
+offset_left = 448.0
+offset_top = 512.0
+offset_right = 704.0
+offset_bottom = 576.0
+bbcode_enabled = true
+text = "
+[center][color=Black]Exit[/color][/center]"
+fit_content = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 256.0
+offset_top = 64.0
+offset_right = 896.0
+offset_bottom = 320.0
+bbcode_enabled = true
+text = "
+[center][font_size=60]Mouse Maze 2024 Godot Edition[/font_size][/center]"
