@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cb88du4xv7x53"]
+[gd_scene load_steps=5 format=3 uid="uid://cb88du4xv7x53"]
 
 [ext_resource type="PackedScene" uid="uid://cdk5sv0pfjewg" path="res://scenes/tile_map.tscn" id="1_k0tkw"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_lmvxb"]
+[ext_resource type="Script" path="res://scripts/next_level.gd" id="3_88db4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_251gw"]
 size = Vector2(96, 112)
@@ -23,6 +24,8 @@ polygon = PackedVector2Array(0, 0, 0, 656, 176, 560, 176, 464, 80, 464, 80, 112,
 position = Vector2(248, 488)
 
 [node name="End" type="Area2D" parent="."]
+script = ExtResource("3_88db4")
+NEXT_LVL = "res://scenes/lvl_2.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="End"]
 position = Vector2(1024, 408)
