@@ -20,6 +20,7 @@ config/icon="res://media/icon.svg"
 Events="*res://scripts/Events.gd"
 ScreenPlayer="*res://scenes/screen_player.tscn"
 GlobalVars="*res://scripts/GlobalVars.gd"
+Settings="*res://scenes/Settings.tscn"
 
 [display]
 
