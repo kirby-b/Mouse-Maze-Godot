@@ -1,11 +1,12 @@
 [gd_scene load_steps=2 format=3 uid="uid://bw6jch335mhnl"]
 
-[ext_resource type="Script" path="res://scripts/Settings.gd" id="1_t2vfa"]
+[ext_resource type="Script" path="res://scripts/Settings.gd" id="1_fwoil"]
 
 [node name="Settings" type="PopupMenu"]
 title = "Settings"
 initial_position = 1
 size = Vector2i(150, 120)
+visible = true
 always_on_top = true
 hide_on_item_selection = false
 hide_on_checkable_item_selection = false
@@ -23,7 +24,7 @@ item_3/text = "Save Settings"
 item_3/id = 3
 item_4/text = "Exit Game"
 item_4/id = 4
-script = ExtResource("1_t2vfa")
+script = ExtResource("1_fwoil")
 
 [connection signal="close_requested" from="." to="." method="_on_close_requested"]
 [connection signal="id_pressed" from="." to="." method="_on_id_pressed"]
