@@ -12,8 +12,10 @@ func _ready():
 
 func _on_jumpscare():
 	animation_player.play("Clear")
-	# Add a global var for which jumpcare to play
-	animation_player.play("Not-Scary")
+	if GlobalVars.game_mode == "scare":
+		animation_player.play("Scary")
+	elif GlobalVars.game_mode == "no-scare":
+		animation_player.play("Not-Scary")
 	
 func _on_player_cheat():
 	animation_player.play("Clear")
