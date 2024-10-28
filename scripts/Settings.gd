@@ -29,11 +29,6 @@ func _on_id_pressed(id):
 			GlobalVars.game_mode = "scare"
 		else:
 			GlobalVars.game_mode = "no-scare"
-	elif id == 1:
-		if is_item_checked(1):
-			GlobalVars.game_mode = "easy"
-		else:
-			GlobalVars.game_mode = "normal"
 	elif id == 3:
 		hide()
 		showing = false
