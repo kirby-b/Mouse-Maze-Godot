@@ -9,6 +9,11 @@ func _ready():
 	Events.connect("jumpscare", Callable(self, "_on_jumpscare"))
 	animation_player.play("Clear")
 
+# Emits a signal when you hit enter or space
+signal continued
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_accept"):
+		continued.emit()
 
 func _on_jumpscare():
 	animation_player.play("Clear")
@@ -16,11 +21,21 @@ func _on_jumpscare():
 		animation_player.play("Scary")
 	elif GlobalVars.game_mode == "no-scare":
 		animation_player.play("Not-Scary")
+	await continued # Waits for signal when you die
+	restart()
 	
 func _on_player_cheat():
 	animation_player.play("Clear")
 	animation_player.play("Cheat")
+	await continued # Waits for signal when you die
+	restart()
 	
 func _on_player_fail():
 	animation_player.play("Clear")
 	animation_player.play("Fail")
+	await continued # Waits for signal when you die
+	restart()
+
+func restart():
+	animation_player.play("Clear")
+	get_tree().change_scene_to_file("res://scenes/lvl_1.tscn") # Changes to next level
