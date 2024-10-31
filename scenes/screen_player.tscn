@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://ulj6sg3ss4yf"]
+[gd_scene load_steps=11 format=3 uid="uid://ulj6sg3ss4yf"]
 
-[ext_resource type="Texture2D" uid="uid://bh7pvc0vwo7cu" path="res://media/icon.svg" id="1_g6upk"]
 [ext_resource type="Script" path="res://scripts/screen_player.gd" id="1_ww713"]
+[ext_resource type="Texture2D" uid="uid://dhd5jy22qp16x" path="res://media/not-scary.PNG" id="2_y0ys4"]
+[ext_resource type="Texture2D" uid="uid://ck7evycmyklk8" path="res://media/scary.jpg" id="3_8hqyn"]
 
 [sub_resource type="Animation" id="Animation_vlc4v"]
 resource_name = "Cheat"
@@ -97,7 +98,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Scary/RichTextLabel:visible")
+tracks/4/path = NodePath("Fail/RichTextLabel:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -109,7 +110,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Fail/RichTextLabel:visible")
+tracks/5/path = NodePath("Cheat/RichTextLabel:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -121,11 +122,11 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Cheat/RichTextLabel:visible")
+tracks/6/path = NodePath("RichTextLabel:visible")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.001),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [false]
@@ -133,22 +134,10 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("RichTextLabel2:visible")
+tracks/7/path = NodePath("RichTextLabel:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0.001),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("RichTextLabel:visible")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
 "times": PackedFloat32Array(0.001),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -237,7 +226,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("RichTextLabel2:visible")
+tracks/3/path = NodePath("RichTextLabel:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -300,31 +289,31 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Scary/RichTextLabel:visible")
+tracks/4/path = NodePath("Fail/RichTextLabel:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [true]
+"values": [false]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Fail/RichTextLabel:visible")
+tracks/5/path = NodePath("Cheat/RichTextLabel:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [false]
+"values": [true]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Cheat/RichTextLabel:visible")
+tracks/6/path = NodePath("RichTextLabel:visible")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -340,18 +329,6 @@ tracks/7/path = NodePath("RichTextLabel:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("RichTextLabel2:visible")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -388,22 +365,10 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Scary/RichTextLabel:visible")
+tracks/2/path = NodePath("RichTextLabel:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("RichTextLabel2:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -428,29 +393,12 @@ offset_right = 1152.0
 offset_bottom = 648.0
 color = Color(0, 0, 0, 1)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 448.0
-offset_top = 384.0
-offset_right = 704.0
-offset_bottom = 512.0
-bbcode_enabled = true
-text = "[center][font_size=30]Press Enter or Space To Restart[/font_size][/center]"
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
-visible = false
-offset_left = 192.0
-offset_top = 384.0
-offset_right = 384.0
-offset_bottom = 512.0
-bbcode_enabled = true
-text = "[center][font_size=30]Press Enter or Space To Restart[/font_size][/center]"
-
 [node name="NotScary" type="Node" parent="."]
 
 [node name="JumpScare" type="Sprite2D" parent="NotScary"]
 position = Vector2(728, 320)
 scale = Vector2(4, 4)
-texture = ExtResource("1_g6upk")
+texture = ExtResource("2_y0ys4")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="NotScary"]
 offset_left = 192.0
@@ -458,24 +406,16 @@ offset_top = 192.0
 offset_right = 384.0
 offset_bottom = 320.0
 bbcode_enabled = true
-text = "[font_size=20][center]BOO[/center]
-Get spooked by something not scary[/font_size]"
+text = "[center][font_size=25]BOO
+Did Mr. Bones rattle you[/font_size]
+[/center]"
 
 [node name="Scary" type="Node" parent="."]
 
 [node name="JumpScare" type="Sprite2D" parent="Scary"]
-position = Vector2(728, 320)
-scale = Vector2(4, 4)
-texture = ExtResource("1_g6upk")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Scary"]
-offset_left = 192.0
-offset_top = 192.0
-offset_right = 384.0
-offset_bottom = 320.0
-bbcode_enabled = true
-text = "[font_size=20][center]BOO[/center]
-Get spooked by something scary [/font_size]"
+position = Vector2(576, 324)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_8hqyn")
 
 [node name="Fail" type="Node" parent="."]
 
@@ -499,6 +439,23 @@ offset_right = 768.0
 offset_bottom = 264.0
 bbcode_enabled = true
 text = "[font_size=40][center]You Cheated[/center][/font_size]"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 448.0
+offset_top = 384.0
+offset_right = 704.0
+offset_bottom = 512.0
+bbcode_enabled = true
+text = "[center][font_size=30]Press Enter or Space To Restart[/font_size][/center]"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 192.0
+offset_top = 384.0
+offset_right = 384.0
+offset_bottom = 512.0
+bbcode_enabled = true
+text = "[center][font_size=30]Press Enter or Space To Restart[/font_size][/center]"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
