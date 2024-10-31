@@ -19,6 +19,7 @@ func _on_jumpscare():
 	animation_player.play("Clear")
 	if GlobalVars.game_mode == "scare":
 		animation_player.play("Scary")
+		SoundPlayer.play_sound(SoundPlayer.JumpScare)
 	elif GlobalVars.game_mode == "no-scare":
 		animation_player.play("Not-Scary")
 	await continued # Waits for signal when you die
