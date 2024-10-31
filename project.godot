@@ -21,6 +21,7 @@ Events="*res://scripts/Events.gd"
 ScreenPlayer="*res://scenes/screen_player.tscn"
 GlobalVars="*res://scripts/GlobalVars.gd"
 Settings="*res://scenes/in_game_settings.tscn"
+SoundPlayer="*res://scenes/sound_player.tscn"
 
 [display]
 
