@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck11yofccco3o"]
+
+[ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_b1tkf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2mk4"]
+size = Vector2(256, 64)
+
+[node name="StartMenu" type="Node2D"]
+script = ExtResource("1_b1tkf")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.00184107, 0.00184107, 0.00184107, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 384.0
+offset_top = 128.0
+offset_right = 768.0
+offset_bottom = 256.0
+bbcode_enabled = true
+text = "[font_size=40][center]Mouse Maze 
+2024[/center][/font_size]"
+
+[node name="StartButton" type="Node" parent="."]
+
+[node name="Area2D" type="Area2D" parent="StartButton"]
+position = Vector2(448, 384)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StartButton/Area2D"]
+position = Vector2(128, 32)
+shape = SubResource("RectangleShape2D_b2mk4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="StartButton"]
+offset_left = 448.0
+offset_top = 384.0
+offset_right = 704.0
+offset_bottom = 448.0
+bbcode_enabled = true
+text = "[font_size=20][center]Click here or press enter to start the game[/center][/font_size]"
+
+[node name="MenuTip" type="Node" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MenuTip"]
+offset_left = 320.0
+offset_top = 576.0
+offset_right = 832.0
+offset_bottom = 640.0
+bbcode_enabled = true
+text = "[font_size=15][center]Press ESC to access the settings menu at any time[/center][/font_size]"
+
+[connection signal="mouse_entered" from="StartButton/Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="StartButton/Area2D" to="." method="_on_area_2d_mouse_exited"]
