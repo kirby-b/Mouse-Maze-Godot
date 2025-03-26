@@ -37,7 +37,7 @@ offset_top = 384.0
 offset_right = 704.0
 offset_bottom = 448.0
 bbcode_enabled = true
-text = "[font_size=20][center]Click here or press enter to start the game[/center][/font_size]"
+text = "[font_size=20][center]Press enter to start the game[/center][/font_size]"
 
 [node name="MenuTip" type="Node" parent="."]
 
